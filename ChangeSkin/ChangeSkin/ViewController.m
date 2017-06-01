@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIImageUtil.h"
+#import "NJSkinManager.h"
 
 @interface ViewController ()
 
@@ -34,7 +34,7 @@
 
     
     UIColor * randomColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-    _imageView.image = [UIImageUtil changeImageColorWithImage:_imageView.image color:randomColor];
+    [[NJSkinManager shared] changeImageColor:randomColor];
 }
 
 

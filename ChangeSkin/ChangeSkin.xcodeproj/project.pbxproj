@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563ECB671EDFA63E00A70AE5 /* sources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 563ECB661EDFA63E00A70AE5 /* sources.bundle */; };
+		563ECB6A1EDFA6A400A70AE5 /* NJSkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563ECB691EDFA6A400A70AE5 /* NJSkinManager.m */; };
 		5674C67A1EDEBB4E00400C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C6791EDEBB4E00400C04 /* main.m */; };
 		5674C67D1EDEBB4E00400C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C67C1EDEBB4E00400C04 /* AppDelegate.m */; };
 		5674C6801EDEBB4E00400C04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C67F1EDEBB4E00400C04 /* ViewController.m */; };
@@ -15,7 +17,7 @@
 		5674C6881EDEBB4F00400C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5674C6861EDEBB4F00400C04 /* LaunchScreen.storyboard */; };
 		5674C6931EDEBB4F00400C04 /* ChangeSkinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C6921EDEBB4F00400C04 /* ChangeSkinTests.m */; };
 		5674C69E1EDEBB4F00400C04 /* ChangeSkinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C69D1EDEBB4F00400C04 /* ChangeSkinUITests.m */; };
-		5674C6AE1EDEBC0000400C04 /* UIImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C6AD1EDEBC0000400C04 /* UIImageUtil.m */; };
+		5674C6AE1EDEBC0000400C04 /* NJUIImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C6AD1EDEBC0000400C04 /* NJUIImageUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		563ECB661EDFA63E00A70AE5 /* sources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sources.bundle; path = ChangeSkin/sources.bundle; sourceTree = "<group>"; };
+		563ECB681EDFA6A400A70AE5 /* NJSkinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJSkinManager.h; sourceTree = "<group>"; };
+		563ECB691EDFA6A400A70AE5 /* NJSkinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJSkinManager.m; sourceTree = "<group>"; };
 		5674C6751EDEBB4E00400C04 /* ChangeSkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeSkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5674C6791EDEBB4E00400C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5674C67B1EDEBB4E00400C04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +57,8 @@
 		5674C6991EDEBB4F00400C04 /* ChangeSkinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangeSkinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5674C69D1EDEBB4F00400C04 /* ChangeSkinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeSkinUITests.m; sourceTree = "<group>"; };
 		5674C69F1EDEBB4F00400C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5674C6AC1EDEBC0000400C04 /* UIImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtil.h; sourceTree = "<group>"; };
-		5674C6AD1EDEBC0000400C04 /* UIImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageUtil.m; sourceTree = "<group>"; };
+		5674C6AC1EDEBC0000400C04 /* NJUIImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJUIImageUtil.h; sourceTree = "<group>"; };
+		5674C6AD1EDEBC0000400C04 /* NJUIImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJUIImageUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,7 @@
 		5674C6771EDEBB4E00400C04 /* ChangeSkin */ = {
 			isa = PBXGroup;
 			children = (
+				563ECB661EDFA63E00A70AE5 /* sources.bundle */,
 				5674C6AB1EDEBBD500400C04 /* ChangeSkin */,
 				5674C67B1EDEBB4E00400C04 /* AppDelegate.h */,
 				5674C67C1EDEBB4E00400C04 /* AppDelegate.m */,
@@ -147,8 +153,10 @@
 		5674C6AB1EDEBBD500400C04 /* ChangeSkin */ = {
 			isa = PBXGroup;
 			children = (
-				5674C6AC1EDEBC0000400C04 /* UIImageUtil.h */,
-				5674C6AD1EDEBC0000400C04 /* UIImageUtil.m */,
+				5674C6AC1EDEBC0000400C04 /* NJUIImageUtil.h */,
+				5674C6AD1EDEBC0000400C04 /* NJUIImageUtil.m */,
+				563ECB681EDFA6A400A70AE5 /* NJSkinManager.h */,
+				563ECB691EDFA6A400A70AE5 /* NJSkinManager.m */,
 			);
 			path = ChangeSkin;
 			sourceTree = "<group>";
@@ -264,6 +272,7 @@
 			files = (
 				5674C6881EDEBB4F00400C04 /* LaunchScreen.storyboard in Resources */,
 				5674C6851EDEBB4F00400C04 /* Assets.xcassets in Resources */,
+				563ECB671EDFA63E00A70AE5 /* sources.bundle in Resources */,
 				5674C6831EDEBB4F00400C04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +301,8 @@
 				5674C6801EDEBB4E00400C04 /* ViewController.m in Sources */,
 				5674C67D1EDEBB4E00400C04 /* AppDelegate.m in Sources */,
 				5674C67A1EDEBB4E00400C04 /* main.m in Sources */,
-				5674C6AE1EDEBC0000400C04 /* UIImageUtil.m in Sources */,
+				563ECB6A1EDFA6A400A70AE5 /* NJSkinManager.m in Sources */,
+				5674C6AE1EDEBC0000400C04 /* NJUIImageUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +540,7 @@
 				5674C6A41EDEBB4F00400C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5674C6A51EDEBB4F00400C04 /* Build configuration list for PBXNativeTarget "ChangeSkinTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +549,7 @@
 				5674C6A71EDEBB4F00400C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5674C6A81EDEBB4F00400C04 /* Build configuration list for PBXNativeTarget "ChangeSkinUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +558,7 @@
 				5674C6AA1EDEBB4F00400C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

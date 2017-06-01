@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface UIImageUtil : NSObject
+@interface NJUIImageUtil : NSObject
 
 + (UIImage *)changeImageColorWithImage:(UIImage *)image color:(UIColor *)color;
 
